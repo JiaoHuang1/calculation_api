@@ -3,7 +3,6 @@ const chaiHttp = require('chai-http');
 const { response } = require('express');
 const server = require('../index');
 
-//Assortion Style
 chai.should();
 
 chai.use(chaiHttp);
@@ -96,7 +95,7 @@ describe('interview API', () => {
                 .end((err, res) => {
                     expect(err).to.be.null;
                     expect(res).to.have.status(200);
-                    res.text.should.be.eql('0.6666666666666667');
+                    res.text.should.be.eql('0.66666666666666666666666666666667');
                 })
         })
 
@@ -107,7 +106,7 @@ describe('interview API', () => {
                 .end((err, res) => {
                     expect(err).to.be.null;
                     expect(res).to.have.status(200);
-                    res.text.should.be.eql('1.4737737501040856');
+                    res.text.should.be.eql('1.47377375010408562210791785906658');
                 })
         })
     })

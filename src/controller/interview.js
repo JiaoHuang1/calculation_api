@@ -50,7 +50,8 @@ router.get('/', async function (req, res){
         
         let result = response.data
 
-        console.log("\n", "id:", id, "\n", "operation:", operation, "\n", "left:", left, "\n", "right:", right, "\n", "result:", result, "\n")
+        console.log('-----------------------------------------------------------------------');
+        console.log("\n", "id:", id, "\n", "operation:", operation, "\n", "left:", left, "\n", "right:", right, "\n", "result:", result, "\n");
 
         //step 3: call the post api and compare my calculation
         //Note: the result calculated by bigDecimal library is a string, so I converted it to number in postURL body
@@ -106,7 +107,7 @@ router.post('/multiply', function(req, res) {
 })
 
 router.post('/divide', function(req, res) {
-    res.end(bigDecimal.divide(req.body.left, req.body.right, 18))
+    res.end(bigDecimal.divide(req.body.left, req.body.right, 32))
 })
 
 router.post('/modulus', function(req, res) {
