@@ -8,21 +8,21 @@ Sample output:
 
 --------------------------1----------------------
 
- id: 54a4d919-700f-47d8-aad8-5511dd013d3e 
- operation: addition 
- left: -1828577033836511 
- right: 1075581700474009 
- result: -752995333362502 
+id: 54a4d919-700f-47d8-aad8-5511dd013d3e <br/>
+operation: addition <br/>
+left: -1828577033836511 <br/>
+right: 1075581700474009 <br/>
+result: -752995333362502 <br/>
 
 Correct
 
 --------------------------2----------------------
 
- id: 933254b8-eb5e-4cb0-9319-bed5fe121755 
- operation: division 
- left: -7064948341022467 
- right: -7617885292517427 
- result: 0.9274159520309297 
+id: 933254b8-eb5e-4cb0-9319-bed5fe121755 <br/>
+operation: division <br/>
+left: -7064948341022467 <br/>
+right: -7617885292517427 <br/>
+result: 0.9274159520309297 <br/>
 
 Correct
 

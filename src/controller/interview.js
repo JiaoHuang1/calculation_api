@@ -106,7 +106,7 @@ router.post('/multiply', function(req, res) {
 })
 
 router.post('/divide', function(req, res) {
-    res.end(bigDecimal.divide(req.body.left, req.body.right, 16))
+    res.end(bigDecimal.divide(req.body.left, req.body.right, 18))
 })
 
 router.post('/modulus', function(req, res) {

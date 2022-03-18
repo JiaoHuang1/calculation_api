@@ -19,15 +19,14 @@ module.exports = app.listen(port, async () => {
     let num = 0;
     let intervalID = null;
     intervalID = setInterval(async () => {
-        num ++;
-        console.log("\n--------------------------" + num + "----------------------")
+        num ++;   
         try {
+            console.log("\n--------------------------" + num + "----------------------")
             const resp = await axios.get(interviewUrl)
             console.log(resp.data)
         }
         catch (e) {
             clearInterval(intervalID)
-            // console.log(e)
         }
     }, 2000)
 
